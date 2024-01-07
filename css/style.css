@@ -11,11 +11,16 @@ h2 {
 }
 header {
     background-color: #333;
+    background-image: url('../images/background_name.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
     border-radius: 10px;
     color: #fff;
     text-align: center;
     padding: 2rem;
 }
+
 
 nav{
     border: 1px solid #333;

@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 1rem;
     padding: 0;
+    background-color: #f5f0f0;
 }
 
 h2 {
@@ -51,7 +52,7 @@ a {
 .project {
     /*borde redondo*/
     border-radius: 10px;
-    background-color: #f5f5f5;
+    background-color: #e0e0e0;
     padding: 20px;
     margin: 20px;
     text-align: center;
@@ -64,7 +65,7 @@ a {
 
 /* Estilos de contacto */
 #contact {
-    background-color: #f5f5f5;
+    background-color: #e0e0e0;
     border-radius: 10px;
     padding: 2rem;
     margin-left: 2rem;

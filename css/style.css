@@ -1,41 +1,53 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 
 h2 {
+    color: rgb(224, 105, 105);
     margin: 2rem
 }
 header {
     background-color: #333;
+    border-radius: 10px;
     color: #fff;
     text-align: center;
     padding: 2rem;
 }
 
 nav{
-    background-color: #8f8f8f;    color: #fff;
-    text-align: left;
+    border: 1px solid #333;
+    border-color: #333;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-top: -20px;
     padding: 2rem;
     max-height: 0.5rem;
 }
 nav ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-self: self-start;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    margin-top: -18px;
     margin-right: 20px;
+    border-radius: 10px;
+    background-color: rgb(224, 105, 105);
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    width: 5rem;
+    text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: #333;
+    color: #21a2ed;
 }
-
-
 .project {
     /*borde redondo*/
     border-radius: 10px;
@@ -53,40 +65,16 @@ a {
 /* Estilos de contacto */
 #contact {
     background-color: #f5f5f5;
+    border-radius: 10px;
     padding: 2rem;
+    margin-left: 2rem;
+    margin-right: 1.3rem;
     text-align: left;
 }
 
 .project p {
     text-align: left;
 }
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-#contact li {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-#contact li:nth-child(1) {
-    animation-delay: 0.5s;
-}
-
-#contact li:nth-child(2) {
-    animation-delay: 1s;
-}
-
-
-
 
 
 footer {
@@ -96,3 +84,11 @@ footer {
     padding: 1rem 0;
 }
 
+.buttons {
+    color: #fff;
+    text-align: center;
+}
+.buttons a {
+    color: #fff;
+    text-decoration: none;
+}

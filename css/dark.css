@@ -2,22 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 1rem;
     padding: 0;
-    background-color: #f5f0f0;
+    background-color: #0a0f0f;
 }
 
 h2 {
-    color: rgb(224, 105, 105);
+    color: rgb(31, 150, 150);
     margin: 2rem
 }
 
 header {
-    background-color: #333;
+    background-color: #ccc;
     background-image: url('../images/background_name.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     border-radius: 10px;
-    color: #fff;
+    color: #fff8f8;
     text-align: center;
     padding: 2rem;
 }
@@ -31,13 +31,14 @@ nav {
 }
 
 a {
-    color: #21a2ed;
+    color: #b0f8fd;
 }
 
 .project {
     /*borde redondo*/
     border-radius: 10px;
-    background-color: #e0e0e0;
+    background-color: #1f1f1f;
+    color:#ccc;
     padding: 20px;
     margin: 20px;
     text-align: center;
@@ -50,12 +51,13 @@ a {
 
 /* Estilos de contacto */
 #contact {
-    background-color: #e0e0e0;
+    background-color: #1f1f1f;
     border-radius: 10px;
     padding: 20px;
     margin-left: 1rem;
     margin-right: 1.3rem;
     text-align: left;
+    color:#ccc;
 }
 
 .project p {
@@ -64,8 +66,8 @@ a {
 
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ccc;
+    color: #000;
     text-align: center;
     padding: 1rem 0;
 }
@@ -96,8 +98,8 @@ footer {
 /* button styling */
 .button {
     --border-right: 6px;
-    --text-stroke-color: rgba(0, 0, 0, 0.6);
-    --animation-color: rgb(224, 105, 105);
+    --text-stroke-color: rgba(255, 255, 255, 0.6);
+    --animation-color: rgb(31, 150, 150);
     --fs-size: 1.3em;
     letter-spacing: px;
     text-decoration: none;
@@ -130,18 +132,18 @@ footer {
 }
 
 .spinner {
-    background-image: linear-gradient(rgb(186, 66, 255) 35%, rgb(0, 225, 255));
+    background-image: linear-gradient(rgb(69, 189, 0) 35%, rgb(255, 30, 0));
     width: 100px;
     height: 100px;
     animation: spinning82341 1.7s linear infinite;
     text-align: center;
     border-radius: 50px;
     filter: blur(1px);
-    box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+    box-shadow: 0px -5px 20px 0px rgb(69, 189, 0), 0px 5px 20px 0px rgb(255, 30, 0);
 }
 
 .spinner1 {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(219, 219, 219);
     width: 100px;
     height: 100px;
     border-radius: 50px;

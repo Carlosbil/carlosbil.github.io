@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,11 @@
 </head>
 
 <body>
+
+    <div class="spinner">
+        <div class="spinner1"></div>
+    </div>
+    
     <header>
         <h1>Carlos Bilbao Lara</h1>
         <p>Artificial Intelligence Engineer</p>
@@ -16,9 +22,30 @@
     <div class="buttons">
         <nav>
             <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <a href="#about">
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;About_me&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;About_me&nbsp;</span>
+                    </button>
+                </a>
+                <a href="#projects">
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;Projects&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;Projects&nbsp;</span>
+                    </button>
+                </a>
+                <a href="#contact">
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;Contact&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;Contact&nbsp;</span>
+                    </button>
+                </a>
+                <a href="#more">
+                    <button class="button" data-text="Awesome">
+                        <span class="actual-text">&nbsp;More&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;More&nbsp;</span>
+                    </button>
+                </a>
             </ul>
         </nav>
     </div>
@@ -98,3 +125,10 @@
 </body>
 
 </html>
+
+<!-- scripts in javascript -->
+<script>
+    window.onload = function() {
+        document.querySelector('.spinner').style.display = 'none';
+    };
+</script>

@@ -8,7 +8,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dark.css">
+    <link id="dark" rel="stylesheet" href="css/dark.css">
+    <link id="light" rel="stylesheet" href="css/style.css" disabled>
+    <script src="scripts.js"></script>
     <title>Carlosbil web</title>
 </head>
 
@@ -22,6 +24,13 @@
     <div class="buttons">
         <nav>
             <ul>
+                <button onclick="toggleStyle()">Change Style</button>
+                <a>
+                    <button class="button" onclick="toggleStyle()" data-text="Awesome">
+                        <span class="actual-text">&nbsp;CHANGE&nbsp;</span>
+                        <span aria-hidden="true" class="hover-text">&nbsp;CHANGE&nbsp;</span>
+                    </button>
+                </a>
                 <a href="#about">
                     <button class="button" data-text="Awesome">
                         <span class="actual-text">&nbsp;About_me&nbsp;</span>

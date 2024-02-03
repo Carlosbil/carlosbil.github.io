@@ -225,20 +225,20 @@ TARJETA DE VISITA
   box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
   position: relative;
   width: 400;
-  height: 150;
+  min-height: 200px;
   border-radius: 16px;
   overflow: hidden;
 }
 
 .wave {
   position: absolute;
-  width: 540px;
-  height: 700px;
-  opacity: 0.6;
+  width: 900px;
+  height: 1000px;
+  opacity: 0.9;
   left: 0;
   top: 0;
   margin-left: -50%;
-  margin-top: -70%;
+  margin-top: -50%;
   background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
 }
 
@@ -250,13 +250,14 @@ TARJETA DE VISITA
 
 .infotop {
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
-  top: 5.6em;
+  top:1.6em;
   left: 0;
   right: 0;
-  color: rgb(255, 255, 255);
+  color: #bd9f67;
   font-weight: 600;
+
 }
 
 .name {
@@ -272,13 +273,13 @@ TARJETA DE VISITA
 }
 
 .playing .wave {
-  border-radius: 40%;
-  animation: wave 3000ms infinite linear;
+  border-radius: 50%;
+  animation: wave 5000ms infinite linear;
 }
 
 .wave {
-  border-radius: 40%;
-  animation: wave 55s infinite linear;
+  border-radius: 70%;
+  animation: wave 90s infinite linear;
 }
 
 .playing .wave:nth-child(2) {
@@ -306,3 +307,11 @@ TARJETA DE VISITA
     transform: rotate(360deg);
   }
 }
+
+/* 
+-------------
+
+SOCIAL MEDIA 
+
+------------
+*/

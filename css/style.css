@@ -32,6 +32,44 @@ a {
     color: #21a2ed;
 }
 
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* para un mejor scrolling en dispositivos táctiles */
+  padding: 10px;
+}
+
+.horizontal-scroll .project {
+  flex: 0 0 auto; /* para evitar que los elementos se estiren */
+  margin-right: 20px; /* espacio entre proyectos */
+  scroll-snap-align: start;
+  /* otros estilos para tus proyectos */
+}
+
+/* Estiliza la barra de desplazamiento (totalidad) */
+.horizontal-scroll::-webkit-scrollbar {
+  width: 10px; /* Grosor de la barra de desplazamiento */
+  height: 10px; /* Altura, útil para desplazamiento horizontal */
+}
+
+/* Estiliza la pista de la barra de desplazamiento */
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo de la pista */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estiliza el pulgar de la barra de desplazamiento */
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #888; /* Color del pulgar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Cambia el color del pulgar al pasar el ratón */
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del pulgar al pasar el ratón */
+}
+
 .project {
     /*borde redondo*/
     border-radius: 10px;
@@ -57,8 +95,66 @@ a {
     text-align: left;
 }
 
-.project p {
-    text-align: left;
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* para un mejor scrolling en dispositivos táctiles */
+  padding: 10px;
+}
+
+.horizontal-scroll .project {
+  flex: 0 0 auto; /* para evitar que los elementos se estiren */
+  margin-right: 20px; /* espacio entre proyectos */
+  scroll-snap-align: start;
+  /* otros estilos para tus proyectos */
+}
+
+/* Estiliza la barra de desplazamiento (totalidad) */
+.horizontal-scroll::-webkit-scrollbar {
+  width: 10px; /* Grosor de la barra de desplazamiento */
+  height: 10px; /* Altura, útil para desplazamiento horizontal */
+}
+
+/* Estiliza la pista de la barra de desplazamiento */
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo de la pista */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estiliza el pulgar de la barra de desplazamiento */
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: #888; /* Color del pulgar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Cambia el color del pulgar al pasar el ratón */
+.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color del pulgar al pasar el ratón */
+}
+.aboutme {
+  /*borde redondo*/
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  color:#ccc;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  margin-left: 1rem;
+}
+
+.project {
+    /*borde redondo*/
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color:#ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    margin-left: 1rem;
+    min-width: 400px;
+    max-width: 400px;
+
 }
 
 

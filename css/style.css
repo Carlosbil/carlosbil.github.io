@@ -2,8 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 1rem;
     padding: 0;
-    background-color: #f5f0f0;
-}
+    background-color: #ccc;
+  }
 
 h2 {
     color: rgb(224, 105, 105);
@@ -11,17 +11,15 @@ h2 {
 }
 
 header {
-    background-color: #333;
-    background-image: url('../images/background_name.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    border-radius: 10px;
-    color: #fff;
-    text-align: center;
-    padding: 2rem;
+  background-color: #ccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+  color: #bd9f67;
+  text-align: center;
+  padding: 2rem;
 }
-
 
 nav {
     justify-content: space-between;
@@ -220,179 +218,91 @@ TARJETA DE VISITA
 
 ------------
 */
-.card {
-    width: 300px;
-    height: 200px;
-    background: #243137;
-    position: relative;
-    display: grid;
-    place-content: center;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  #logo-main, #logo-second {
-    height: 100%;
-  }
-  
-  #logo-main {
-    fill: #bd9f67;
-  }
-  
-  #logo-second {
-    padding-bottom: 10px;
-    fill: none;
-    stroke: #bd9f67;
-    stroke-width: 1px;
-  }
-  
-  .border {
-    position: absolute;
-    inset: 0px;
-    border: 2px solid #bd9f67;
-    opacity: 0;
-    transform: rotate(10deg);
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .bottom-text {
-    position: absolute;
-    left: 50%;
-    bottom: 13px;
-    transform: translateX(-50%);
-    font-size: 6px;
-    text-transform: uppercase;
-    padding: 0px 5px 0px 8px;
-    color: #bd9f67;
-    background: #243137;
-    opacity: 0;
-    letter-spacing: 7px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .content {
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .content .logo {
-    height: 35px;
-    position: relative;
-    width: 33px;
-    overflow: hidden;
-    transition: all 1s ease-in-out;
-  }
-  
-  .content .logo .logo1 {
-    height: 33px;
-    position: absolute;
-    left: 0;
-  }
-  
-  .content .logo .logo2 {
-    height: 33px;
-    position: absolute;
-    left: 33px;
-  }
-  
-  .content .logo .trail {
-    position: absolute;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-  }
-  
-  .content .logo-bottom-text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 30px;
-    color: #bd9f67;
-    padding-left: 8px;
-    font-size: 11px;
-    opacity: 0;
-    letter-spacing: none;
-    transition: all 0.5s ease-in-out 0.5s;
-  }
-  
-  .card:hover {
-    border-radius: 0;
-    transform: scale(1.1);
-  }
-  
-  .card:hover .logo {
-    width: 134px;
-    animation: opacity 1s ease-in-out;
-  }
-  
-  .card:hover .border {
-    inset: 15px;
-    opacity: 1;
-    transform: rotate(0);
-  }
-  
-  .card:hover .bottom-text {
-    letter-spacing: 3px;
-    opacity: 1;
-    transform: translateX(-50%);
-  }
-  
-  .card:hover .content .logo-bottom-text {
-    opacity: 1;
-    letter-spacing: 9.5px;
-  }
-  
-  .card:hover .trail {
-    animation: trail 1s ease-in-out;
-  }
-  
-  @keyframes opacity {
-    0% {
-      border-right: 1px solid transparent;
-    }
-  
-    10% {
-      border-right: 1px solid #bd9f67;
-    }
-  
-    80% {
-      border-right: 1px solid #bd9f67;
-    }
-  
-    100% {
-      border-right: 1px solid transparent;
-    }
-  }
-  
-  @keyframes trail {
-    0% {
-      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
-      opacity: 0;
-    }
-  
-    30% {
-      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
-      opacity: 1;
-    }
-  
-    70% {
-      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 70%, rgb(189, 159, 103) 100%);
-      opacity: 1;
-    }
-  
-    95% {
-      background: linear-gradient(90deg, rgba(189, 159, 103, 0) 90%, rgb(189, 159, 103) 100%);
-      opacity: 0;
-    }
+
+.e-card {
+  margin: 50 auto;
+  background: transparent;
+  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  position: relative;
+  width: 400;
+  height: 150;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  width: 540px;
+  height: 700px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -50%;
+  margin-top: -70%;
+  background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+}
+
+.icon {
+  width: 3em;
+  margin-top: -1em;
+  padding-bottom: 1em;
+}
+
+.infotop {
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 5.6em;
+  left: 0;
+  right: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 100;
+  position: relative;
+  top: 1em;
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
   }
 
-
-/* 
--------------
-
-OTRA COSA 
-
-------------
-*/
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -61,7 +61,7 @@ a {
 
 /* Estiliza el pulgar de la barra de desplazamiento */
 .horizontal-scroll::-webkit-scrollbar-thumb {
-  background: #888; /* Color del pulgar */
+  background: #888888; /* Color del pulgar */
   border-radius: 10px; /* Bordes redondeados */
 }
 
@@ -70,14 +70,29 @@ a {
   background: #555; /* Color del pulgar al pasar el ratón */
 }
 
+.aboutme {
+  /*borde redondo*/
+  border-radius: 10px;
+  background-color: #b0b0b0;
+  color:#000000;
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+  margin-left: 1rem;
+}
+
 .project {
     /*borde redondo*/
     border-radius: 10px;
-    background-color: #e0e0e0;
+    background-color: #1f1f1f;
+    color:#ccc;
     padding: 20px;
     margin: 20px;
     text-align: center;
     margin-left: 1rem;
+    min-width: 400px;
+    max-width: 400px;
+
 }
 
 .project img {
@@ -132,29 +147,23 @@ a {
 .horizontal-scroll::-webkit-scrollbar-thumb:hover {
   background: #555; /* Color del pulgar al pasar el ratón */
 }
-.aboutme {
-  /*borde redondo*/
-  border-radius: 10px;
-  background-color: #1f1f1f;
-  color:#ccc;
-  padding: 20px;
-  margin: 20px;
-  text-align: center;
-  margin-left: 1rem;
-}
 
 .project {
     /*borde redondo*/
     border-radius: 10px;
-    background-color: #1f1f1f;
-    color:#ccc;
+    background-color: #b0b0b0;
+    color:#000000;
     padding: 20px;
     margin: 20px;
-    text-align: center;
+    text-align: left;
     margin-left: 1rem;
     min-width: 400px;
     max-width: 400px;
 
+}
+
+.project p {
+  text-align: left;
 }
 
 
@@ -354,3 +363,46 @@ SOCIAL MEDIA
 
 ------------
 */
+.socialparent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialchild {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.socialchild:hover {
+  background-color: rgb(195, 195, 195);
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+.socialbutton {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.socialbutton:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}

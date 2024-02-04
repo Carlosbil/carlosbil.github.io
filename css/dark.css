@@ -79,7 +79,7 @@ a {
   color:#ccc;
   padding: 20px;
   margin: 20px;
-  text-align: center;
+  text-align: left;
   margin-left: 1rem;
 }
 
@@ -92,8 +92,8 @@ a {
     margin: 20px;
     text-align: center;
     margin-left: 1rem;
-    min-width: 400px;
-    max-width: 400px;
+    min-width: 350px;
+    max-width: 350px;
 
 }
 
@@ -182,25 +182,6 @@ footer {
 .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
-}
-
-.spinner {
-    background-image: linear-gradient(rgb(69, 189, 0) 35%, rgb(255, 30, 0));
-    width: 100px;
-    height: 100px;
-    animation: spinning82341 1.7s linear infinite;
-    text-align: center;
-    border-radius: 50px;
-    filter: blur(1px);
-    box-shadow: 0px -5px 20px 0px rgb(69, 189, 0), 0px 5px 20px 0px rgb(255, 30, 0);
-}
-
-.spinner1 {
-    background-color: rgb(219, 219, 219);
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    filter: blur(10px);
 }
 
 @keyframes spinning82341 {

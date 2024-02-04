@@ -40,6 +40,7 @@ a {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; /* para un mejor scrolling en dispositivos táctiles */
   padding: 10px;
+  border-radius: 20px;
 }
 
 .horizontal-scroll .project {
@@ -323,3 +324,46 @@ SOCIAL MEDIA
 
 ------------
 */
+.socialparent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialchild {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.socialchild:hover {
+  background-color: rgb(195, 195, 195);
+  background-position: -100px 100px, -100px 100px;
+  transform: rotate3d(0.5, 1, 0, 30deg);
+  transform: perspective(180px) rotateX(60deg) translateY(2px);
+  box-shadow: 0px 10px 10px rgb(1, 49, 182);
+}
+
+.socialbutton {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.socialbutton:hover {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
+  border-radius: 50%;
+}

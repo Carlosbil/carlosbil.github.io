@@ -80,6 +80,10 @@ a {
   text-align: left;
   margin-left: 1rem;
 }
+.aboutme p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .project {
     /*borde redondo*/
@@ -96,6 +100,7 @@ a {
 }
 
 .project img {
+  text-align: center;
   max-width: 20%;
   border-radius: 20px;
 }
@@ -164,6 +169,8 @@ a {
 
 .project p {
   text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 

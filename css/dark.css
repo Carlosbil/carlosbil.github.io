@@ -39,7 +39,6 @@ a {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch; /* para un mejor scrolling en dispositivos táctiles */
-  padding: 10px;
   border-radius: 20px;
 }
 
@@ -79,8 +78,12 @@ a {
   color:#ccc;
   padding: 20px;
   margin: 20px;
-  text-align: left;
   margin-left: 1rem;
+}
+
+.aboutme p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .project {
@@ -115,6 +118,8 @@ a {
 
 .project p {
     text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 

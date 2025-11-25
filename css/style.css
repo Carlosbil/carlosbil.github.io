@@ -646,6 +646,31 @@ section {
     transition: all var(--transition-normal);
 }
 
+.project-card.featured {
+    grid-column: span 2;
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(6, 182, 212, 0.08) 100%);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.1);
+}
+
+.project-card.featured .project-category {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.project-card.featured .project-info h3 {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    .project-card.featured {
+        grid-column: span 1;
+    }
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-lg);

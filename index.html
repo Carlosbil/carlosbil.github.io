@@ -380,9 +380,38 @@
                 <div class="section-line"></div>
             </div>
             <div class="projects-grid">
+                <!-- Neuroevolution - PhD Research -->
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="./images/neuroevolution.png" alt="Neuroevolution System - Distributed Neural Architecture Evolution" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Carlosbil/Neuroevolution" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">🔬 PhD Research</span>
+                        <h3>Neuroevolution System</h3>
+                        <p>Distributed system for evolving neural network architectures using Hybrid NEAT algorithms. Features Kafka-based microservices architecture for scalable and fault-tolerant evolution of CNN models.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Kafka</span>
+                            <span>Docker</span>
+                            <span>PyTorch</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AutoModelizer - Master's Thesis -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="./images/AutoBDP.png" alt="AutoBDP Project - Genetic algorithms and neural networks" loading="lazy">
+                        <img src="./images/AutoBDP.png" alt="AutoModelizer - Genetic Algorithm CNN Architecture Search" loading="lazy">
                         <div class="project-overlay">
                             <a href="https://github.com/Carlosbil/AutoModelizer" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -394,23 +423,25 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-category">Machine Learning</span>
-                        <h3>AutoBDP: Neural Architecture Search</h3>
-                        <p>Combines genetic algorithms to automatically find the best CNN architecture for any dataset. Features a React-based UI for easy use regardless of expertise level.</p>
+                        <span class="project-category">🎓 Master's Thesis</span>
+                        <h3>AutoModelizer</h3>
+                        <p>Automatic CNN architecture optimizer using genetic algorithms. Features a React-based interface for configuring evolution parameters. Developed as part of my Master's degree final project.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>PyTorch</span>
-                            <span>Genetic Algorithms</span>
                             <span>React</span>
+                            <span>Docker</span>
+                            <span>K8s</span>
                         </div>
                     </div>
                 </article>
 
+                <!-- QA Bot and Chat Bot -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="./images/logo_QP.png" alt="BDP Project - Full Stack Application" loading="lazy">
+                        <img src="./images/chatbot.png" alt="QA Bot and Chat Bot - NLP with BERT and T5" loading="lazy">
                         <div class="project-overlay">
-                            <a href="https://github.com/Carlosbil/TheQuizzParty" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                            <a href="https://github.com/Carlosbil/QA-Bot-and-Chat-Bot" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15,3 21,3 21,9"></polyline>
@@ -420,22 +451,23 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <span class="project-category">Full Stack + AI</span>
-                        <h3>BDP Project</h3>
-                        <p>A comprehensive project combining backend, frontend, CI/CD, and AI components. Showcases full-stack development skills with integrated machine learning capabilities.</p>
+                        <span class="project-category">Natural Language Processing</span>
+                        <h3>QA Bot & Multilingual ChatBot</h3>
+                        <p>Dual NLP system: a T5-based chatbot that answers questions without context, and a multilingual QA system (English/Spanish) using BERT with context-based responses.</p>
                         <div class="project-tech">
                             <span>Python</span>
-                            <span>React</span>
-                            <span>PostgreSQL</span>
-                            <span>CUDA</span>
                             <span>BERT</span>
+                            <span>T5</span>
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
                         </div>
                     </div>
                 </article>
 
+                <!-- AI for Geometry Dash -->
                 <article class="project-card">
                     <div class="project-image">
-                        <img src="./images/Geometry.png" alt="AI for Geometry Dash - Reinforcement Learning" loading="lazy">
+                        <img src="./images/Geometry.png" alt="AI for Geometry Dash - Deep Q-Learning" loading="lazy">
                         <div class="project-overlay">
                             <a href="https://github.com/Carlosbil/AI_FOR_Geometry_dash" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -449,12 +481,67 @@
                     <div class="project-info">
                         <span class="project-category">Reinforcement Learning</span>
                         <h3>AI for Geometry Dash</h3>
-                        <p>PPO and Deep Q-Learning models that learn to play Geometry Dash. Built using stable-baselines3 with CNN models and a custom Gym environment.</p>
+                        <p>Deep Q-Learning and PPO agents that learn to play Geometry Dash in real-time. Uses CNN for screen analysis, custom reward system, and e-greedy policy with CUDA acceleration.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>PyTorch</span>
-                            <span>Stable-Baselines3</span>
-                            <span>OpenAI Gym</span>
+                            <span>CUDA</span>
+                            <span>PPO</span>
+                            <span>DQN</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ALL MY CNNs -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./images/cnn.png" alt="Vision Computing CNN Collection" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Carlosbil/ALL_MY_CNNs" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Computer Vision</span>
+                        <h3>Vision Computing CNNs</h3>
+                        <p>Collection of CNN architectures for image classification: CIFAR-100 experiments, DogNet detector, MNIST classifier, Flowers-102 classifier, and a 100-class sports classifier.</p>
+                        <div class="project-tech">
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                            <span>Keras</span>
+                            <span>CNN</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Stock Predictor -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./images/stock.png" alt="Stock Market Predictor" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Carlosbil/Invest_basic_predictor" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Data Science</span>
+                        <h3>Stock Predictor</h3>
+                        <p>Machine learning model for predicting stock market values. Trained on historical data from Microsoft, Apple, and Amazon to forecast future price movements.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                            <span>Jupyter</span>
                         </div>
                     </div>
                 </article>

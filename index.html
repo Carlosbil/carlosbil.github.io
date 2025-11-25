@@ -4,212 +4,467 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carlos Bilbao Lara - Artificial Intelligence Engineer especializado en NLP, Computer Vision y LLMs. Portfolio profesional con proyectos de Machine Learning.">
+    <meta name="keywords" content="Artificial Intelligence, Machine Learning, NLP, Computer Vision, Python, PyTorch, Deep Learning, Carlos Bilbao">
+    <meta name="author" content="Carlos Bilbao Lara">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Carlos Bilbao Lara - AI Engineer Portfolio">
+    <meta property="og:description" content="Artificial Intelligence Engineer especializado en NLP, Computer Vision y LLMs.">
+    <meta property="og:url" content="https://carlosbil.github.io">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carlos Bilbao Lara - AI Engineer">
+    <meta name="twitter:description" content="Artificial Intelligence Engineer especializado en NLP, Computer Vision y LLMs.">
+    
     <link id="dark" rel="stylesheet" href="css/dark.css">
     <link id="light" rel="stylesheet" href="css/style.css" disabled>
-    <script src="scripts.js"></script>
-    <title>Carlosbil web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <script src="scripts.js" defer></script>
+    <title>Carlos Bilbao Lara | AI Engineer</title>
 </head>
 
 <body>
-    <header>
-        <div class="e-card playing">
-            <div class="image"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <div class="wave"></div>
-            <br>
-            <br>
-            <h1 class="infotop">Carlos Bilbao Lara</h1>
-            <br>
-            <br>
-            <br>
-            <div class="name">Artificial Intelligence Engineer</div>
-            <br>
-            <div class="socialparent">
-                <div class="socialchild child-1">
-                    <a href="mailto:carlosbilbao2@gmail.com" class="socialbutton btn-1" h>
-                        <svg height="1em" viewBox="0 0 512 512" fill="#bd9f67">
-                            <path fill="#bd9f67"
-                                d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="socialchild child-2">
-                    <a href="https://www.linkedin.com/in/carlos-bilbao-lara/" class="socialbutton btn-2" h>
-                        <svg height="1em" viewBox="0 0 448 512" fill="#bd9f67">
-                            <path
-                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="socialchild child-3">
-                    <a href="https://github.com/Carlosbil" class="socialbutton btn-3" h>
-                        <svg height="1em" viewBox="0 0 496 512" fill="#bd9f67">
-                            <path
-                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                        </path>
+    <!-- Navbar fija -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-text">CB</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#introduction" class="nav-link">Intro</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+                <button class="theme-toggle" onclick="toggleStyle()" aria-label="Toggle theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <div class="e-card playing">
+                <div class="image"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="card-content">
+                    <p class="greeting" id="typing-text"></p>
+                    <h1 class="infotop">Carlos Bilbao Lara</h1>
+                    <div class="name">
+                        <span class="role-text">Artificial Intelligence Engineer</span>
+                    </div>
+                    <p class="tagline">Transforming ideas into intelligent solutions</p>
+                    <div class="socialparent">
+                        <div class="socialchild child-1">
+                            <a href="mailto:carlosbilbao2@gmail.com" class="socialbutton btn-1" aria-label="Email">
+                                <svg height="1.2em" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="socialchild child-2">
+                            <a href="https://www.linkedin.com/in/carlos-bilbao-lara/" class="socialbutton btn-2" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <svg height="1.2em" viewBox="0 0 448 512" fill="currentColor">
+                                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="socialchild child-3">
+                            <a href="https://github.com/Carlosbil" class="socialbutton btn-3" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <svg height="1.2em" viewBox="0 0 496 512" fill="currentColor">
+                                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#introduction" class="scroll-indicator" aria-label="Scroll down">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                        </svg>
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="buttons">
-        <nav>
-            <ul>
-                <a>
-                    <button class="button" onclick="toggleStyle()" data-text="Awesome">
-                        <span class="actual-text">&nbsp;Light&nbsp;</span>
-                        <span aria-hidden="true" class="hover-text">&nbsp;light&nbsp;</span>
-                    </button>
-                </a>
-                <a href="#introduction">
-                    <button class="button" data-text="Awesome">
-                        <span class="actual-text">&nbsp;INTRO&nbsp;</span>
-                        <span aria-hidden="true" class="hover-text">&nbsp;INTRO&nbsp;</span>
-                    </button>
-                </a>
-                <a href="#cv">
-                    <button class="button" data-text="Awesome">
-                        <span class="actual-text">&nbsp;CV&nbsp;</span>
-                        <span aria-hidden="true" class="hover-text">&nbsp;CV&nbsp;</span>
-                    </button>
-                </a>
-                <a href="#about">
-                    <button class="button" data-text="Awesome">
-                        <span class="actual-text">&nbsp;About_me&nbsp;</span>
-                        <span aria-hidden="true" class="hover-text">&nbsp;About_me&nbsp;</span>
-                    </button>
-                </a>
-                <a href="#projects">
-                    <button class="button" data-text="Awesome">
-                        <span class="actual-text">&nbsp;Projects&nbsp;</span>
-                        <span aria-hidden="true" class="hover-text">&nbsp;Projects&nbsp;</span>
-                    </button>
-                </a>
-                <a href="#contact">
-                    <button class="button" data-text="Awesome">
-                        <span class="actual-text">&nbsp;Contact&nbsp;</span>
-                        <span aria-hidden="true" class="hover-text">&nbsp;Contact&nbsp;</span>
-                    </button>
-                </a>
-            </ul>
-        </nav>
-    </div>
-
-    <section id="introduction">
-        <h2>Introduction</h2>
-        <div class="aboutme">
-            <p>
-                Hello, I'm Carlos Bilbao, an Artificial Intelligence Engineer with experience in developing innovative solutions
-                using machine learning and cutting-edge technologies. Throughout my career, I have worked on projects ranging
-                from Natural Language Processing (NLP) to Computer Vision, and I have led the development of microservices
-                architectures to ensure scalability and efficient system maintenance.
-            </p>
-            <p>
-                My passion is solving complex problems through the use of technology, and I always seek to learn and improve both
-                technically and personally. I enjoy working in teams, closely collaborating with clients to provide tailored
-                solutions to their needs, and applying Agile methodologies to maximize productivity and product quality.
-            </p>
-        </div>
-    </section>
-
-    
-    <section id="CV">
-        <h2>CURRICULUM VITAE</h2>
-        <div class="aboutme">
-            <p>
-                <a href="https://carlosbil.github.io/cv/Bilbao_Lara_Carlos_CV_1.pdf" target="_blank">Download CV</a>
-            </p>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About me</h2>
-        <div class="aboutme">
-            <p> I'm Carlos Bilbao, an Artificial Intelligence Engineer at Full-On-Net. 
-            I specialize in NLP, Vision Computing, and multimodal LLMs, leveraging AI to create solutions that save users up to 30% of their time.
-            Currently, I am focused on developing AI pipelines and microservices using technologies such as Hugging Face, PyTorch, Flask, OpenCV, 
-            and SQL Alchemy, and deploying them on Azure using Docker and Kubernetes.</p>
-
-            <p>Throughout my career, I've worked with both backend and frontend technologies, collaborating on various projects and 
-            maintaining close communication with clients to tailor solutions that meet their specific needs. Also i am always involved into new projects trying to learn and use new tecnologies, while </p>
-
-            <p>I enjoy taking on complex challenges and am always looking to learn new things, improve existing processes, and create innovative 
-            solutions. I'm proficient in Python, Java, JavaScript, SQL, and many libraries such as TensorFlow, Keras, PyTorch, and Hugging Face, 
-            and I actively use Agile methodologies and tools like Git, Docker, Jenkins, and Kubernetes.</p>
-        </div>
-    </section>
-
-    <h2>Some personal projects</h2>
-    <section id="projects" class="horizontal-scroll">
-        <div class="project">
-            <img src="./images/AutoBDP.png" alt="Proyecto X">
-            <h3>AutoBDP: Genetic algorithms and neural networks</h3>
-            <p> This project combines genetic algorithms to perform the search for the best architecture for a CNN given a dataset. 
-            Users can automatically find the best neural network for their dataset, regardless of their expertise level. 
-            It also features a React-based UI to simplify the process for users.</p>
-            <p> Technologies used: <b>Python</b> (Pytorch, Numpy, etc.), <b>React</b></p>
-            <a href="https://github.com/Carlosbil/AutoModelizer">Code here!</a>
-        </div>
-
-        <div class="project">
-            <img src="./images/logo_QP.png" alt="Proyecto 1">
-            <h3>BDP Project</h3>
-            <p> A large project combining backend, frontend, CD/CI, and AI components, showcasing most of my knowledge in one place. 
-            Currently under development.</p>
-            <p> Technologies used: <b>Python</b>, <b>React</b>, <b>Postgres SQL</b>, <b>CUDA</b></p>
-            <a href="https://github.com/Carlosbil/TheQuizzParty">Back and front here!</a>
-            <a href="https://github.com/Carlosbil/BertBot">AI here!</a>
-        </div>
-
-        <div class="project">
-            <img src="./images/Geometry.png" alt="Proyecto 2">
-            <h3>AI for Geometry Dash</h3>
-            <p> A PPO and Deep Q-Learning model that learns to play the Geometry Dash game, built using stable-baselines3 and Pytorch. 
-            It includes CNN models and a custom Gym environment.</p>
-            <a href="https://github.com/Carlosbil/AI_FOR_Geometry_dash">Code here!</a>
-        </div>
-    </section>
-
-    <h2>Contact me</h2>
-    <section id="contact">
-        <div class="socialparent">
-            <div class="socialchild child-1">
-                <button class="socialbutton btn-1">
-                    <a href="mailto:carlosbilbao2@gmail.com" class="socialbutton btn-1" h>
-                        <svg height="2em" viewBox="0 0 512 512" fill="#fd7848">
-                            <path fill="#fd7848"
-                                d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z">
-                            </path>
+    <main>
+        <!-- Introduction Section -->
+        <section id="introduction" class="fade-in">
+            <div class="section-header">
+                <h2><span class="section-number">01.</span> Introduction</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="aboutme">
+                <p>
+                    Hello! I'm <strong>Carlos Bilbao</strong>, an <strong>Artificial Intelligence Engineer</strong> with a passion for developing innovative solutions using machine learning and cutting-edge technologies. I specialize in <strong>Natural Language Processing (NLP)</strong>, <strong>Computer Vision</strong>, and <strong>Multimodal LLMs</strong>.
+                </p>
+                <p>
+                    Throughout my career, I have worked on projects that leverage AI to create solutions that save users up to <strong>30% of their time</strong>. I lead the development of microservices architectures to ensure scalability and efficient system maintenance.
+                </p>
+                <p>
+                    My passion is solving complex problems through technology, and I always seek to learn and improve both technically and personally. I enjoy working in teams, collaborating closely with clients to provide tailored solutions, and applying <strong>Agile methodologies</strong> to maximize productivity and product quality.
+                </p>
+                <div class="cta-buttons">
+                    <a href="./cv/E_Bilbao_Lara_Carlos_CV.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
                         </svg>
+                        Download CV
                     </a>
-                </button>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
             </div>
-            <div class="socialchild child-2">
-                <a href="https://www.linkedin.com/in/carlos-bilbao-lara/" class="socialbutton btn-2" h>
-                    <svg height="2em" viewBox="0 0 448 512" fill="#1e90ff">
-                        <path
-                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
-                        </path>
-                    </svg>
-                </a>
-            </div>
-            <div class="socialchild child-3">
-                <a href="https://github.com/Carlosbil" class="socialbutton btn-3" h>
-                    <svg height="2em" viewBox="0 0 496 512">
-                        <path
-                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
-                        </path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Skills Section -->
+        <section id="skills" class="fade-in">
+            <div class="section-header">
+                <h2><span class="section-number">02.</span> Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16,18 22,12 16,6"></polyline>
+                            <polyline points="8,6 2,12 8,18"></polyline>
+                        </svg>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                        </svg>
+                        AI & Machine Learning
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag highlight">PyTorch</span>
+                        <span class="skill-tag highlight">Hugging Face</span>
+                        <span class="skill-tag highlight">TensorFlow</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Stable Baselines</span>
+                        <span class="skill-tag">CUDA</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        Backend & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="12,2 2,7 12,12 22,7 12,2"></polygon>
+                            <polyline points="2,17 12,22 22,17"></polyline>
+                            <polyline points="2,12 12,17 22,12"></polyline>
+                        </svg>
+                        Frontend & Tools
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="fade-in">
+            <div class="section-header">
+                <h2><span class="section-number">03.</span> Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Engineer</h3>
+                            <span class="company">@ Full-On-Net</span>
+                        </div>
+                        <span class="timeline-date">2023 - Present</span>
+                        <ul class="timeline-details">
+                            <li>Developing AI pipelines and microservices for NLP and Computer Vision applications</li>
+                            <li>Implementing multimodal LLMs that save users up to 30% of their time</li>
+                            <li>Building and deploying scalable solutions using Docker, Kubernetes, and Azure</li>
+                            <li>Technologies: Python, PyTorch, Hugging Face, Flask, OpenCV, Azure</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Developer</h3>
+                            <span class="company">@ Full-On-Net</span>
+                        </div>
+                        <span class="timeline-date">2022 - 2023</span>
+                        <ul class="timeline-details">
+                            <li>Developed backend and frontend solutions for client projects</li>
+                            <li>Collaborated with clients to understand requirements and deliver tailored solutions</li>
+                            <li>Applied Agile methodologies for project management</li>
+                            <li>Technologies: Python, JavaScript, React, SQL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Computer Engineering Degree</h3>
+                            <span class="company">@ University</span>
+                        </div>
+                        <span class="timeline-date">2018 - 2022</span>
+                        <ul class="timeline-details">
+                            <li>Specialized in Artificial Intelligence and Software Development</li>
+                            <li>Completed projects in Machine Learning, Deep Learning, and Computer Vision</li>
+                            <li>Strong foundation in algorithms, data structures, and software engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="fade-in">
+            <div class="section-header">
+                <h2><span class="section-number">04.</span> Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./images/AutoBDP.png" alt="AutoBDP Project - Genetic algorithms and neural networks" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Carlosbil/AutoModelizer" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Machine Learning</span>
+                        <h3>AutoBDP: Neural Architecture Search</h3>
+                        <p>Combines genetic algorithms to automatically find the best CNN architecture for any dataset. Features a React-based UI for easy use regardless of expertise level.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>Genetic Algorithms</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./images/logo_QP.png" alt="BDP Project - Full Stack Application" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Carlosbil/TheQuizzParty" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Full Stack + AI</span>
+                        <h3>BDP Project</h3>
+                        <p>A comprehensive project combining backend, frontend, CI/CD, and AI components. Showcases full-stack development skills with integrated machine learning capabilities.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>React</span>
+                            <span>PostgreSQL</span>
+                            <span>CUDA</span>
+                            <span>BERT</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./images/Geometry.png" alt="AI for Geometry Dash - Reinforcement Learning" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Carlosbil/AI_FOR_Geometry_dash" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15,3 21,3 21,9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Reinforcement Learning</span>
+                        <h3>AI for Geometry Dash</h3>
+                        <p>PPO and Deep Q-Learning models that learn to play Geometry Dash. Built using stable-baselines3 with CNN models and a custom Gym environment.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>Stable-Baselines3</span>
+                            <span>OpenAI Gym</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="more-projects">
+                <a href="https://github.com/Carlosbil" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                    View More on GitHub
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12,5 19,12 12,19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="fade-in">
+            <div class="section-header">
+                <h2><span class="section-number">05.</span> Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm currently open to new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hi, feel free to reach out!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:carlosbilbao2@gmail.com" class="contact-item">
+                        <div class="contact-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">carlosbilbao2@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/carlos-bilbao-lara/" class="contact-item" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">carlos-bilbao-lara</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/Carlosbil" class="contact-item" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">Carlosbil</span>
+                        </div>
+                    </a>
+                </div>
+                <a href="mailto:carlosbilbao2@gmail.com" class="btn btn-primary btn-large">
+                    Say Hello
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Designed & Built by <strong>Carlos Bilbao Lara</strong></p>
+            <p class="footer-year">© 2024 - All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18,15 12,9 6,15"></polyline>
+        </svg>
+    </button>
 </body>
 
 </html>

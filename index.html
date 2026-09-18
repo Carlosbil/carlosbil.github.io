@@ -1,612 +1,141 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Carlos Bilbao Lara - AI & Software Lead con +4 años de experiencia en proyectos internacionales para HPE, AT&T, Telefónica y Verisure. Especializado en NLP, Computer Vision y LLMs.">
-    <meta name="keywords" content="Artificial Intelligence, Machine Learning, NLP, Computer Vision, Python, PyTorch, Deep Learning, Carlos Bilbao, AI Lead, MCP Servers, Azure AI Foundry">
-    <meta name="author" content="Carlos Bilbao Lara">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Carlos Bilbao Lara - AI & Software Lead">
-    <meta property="og:description" content="AI & Software Lead con +4 años de experiencia en proyectos internacionales. Especializado en NLP, Computer Vision y LLMs.">
-    <meta property="og:url" content="https://carlosbil.github.io">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Carlos Bilbao Lara - AI & Software Lead">
-    <meta name="twitter:description" content="AI & Software Lead con +4 años de experiencia. Especializado en NLP, Computer Vision y LLMs.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./images/NeuroEvolution.png">
-    <link rel="apple-touch-icon" href="./images/NeuroEvolution.png">
-    
-    <link id="dark" rel="stylesheet" href="css/dark.css">
-    <link id="light" rel="stylesheet" href="css/style.css" disabled>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    
-    <script src="scripts.js" defer></script>
-    <title>Carlos Bilbao Lara | AI & Software Lead</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Carlos Bilbao Lara - Senior AI Engineer and AI & Software Lead building production agentic systems, MCP platforms and distributed AI infrastructure.">
+  <meta name="author" content="Carlos Bilbao Lara">
+  <meta name="theme-color" content="#080b10">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Carlos Bilbao - Senior AI Engineer">
+  <meta property="og:description" content="Production AI, agentic systems and cloud-native engineering.">
+  <meta property="og:url" content="https://carlosbil.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="scripts.js" defer></script>
+  <title>Carlos Bilbao | Senior AI Engineer</title>
 </head>
-
 <body>
-    <!-- Navbar fija -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-brand">
-            <span class="brand-text">CB</span>
+  <div class="noise" aria-hidden="true"></div>
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="brand" href="#top" aria-label="Carlos Bilbao, home"><span>CB</span><i></i></a>
+    <div class="nav-links" id="nav-links">
+      <a href="#impact">Impact</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Selected work</a>
+      <a href="#research">Research</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch color theme">
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <a class="nav-cta" href="mailto:carlosbilbao2@gmail.com">Let's talk <span>↗</span></a>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Madrid · AI & Software Lead · PhD Candidate</p>
+        <h1>I turn AI capabilities into <span>production systems.</span></h1>
+        <p class="hero-lead">Senior AI engineer leading enterprise adoption and building agentic platforms that connect models, knowledge and real-world tools.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore selected work <span>↓</span></a>
+          <a class="button button-ghost" href="./cv/E_Bilbao_Lara_Carlos_CV.pdf" target="_blank" rel="noopener">Download CV <span>↗</span></a>
         </div>
-        <ul class="nav-links">
-            <li><a href="#introduction" class="nav-link">Intro</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-            <li>
-                <button class="theme-toggle" onclick="toggleStyle()" aria-label="Toggle theme">
-                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                </button>
-            </li>
-        </ul>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
-
-    <!-- Hero Section -->
-    <header id="hero">
-        <div class="hero-content">
-            <div class="e-card playing">
-                <div class="image"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="card-content">
-                    <p class="greeting" id="typing-text"></p>
-                    <h1 class="infotop">Carlos Bilbao Lara</h1>
-                    <div class="name">
-                        <span class="role-text">AI & Software Lead</span>
-                    </div>
-                    <p class="tagline">+4 years building AI solutions for top-tier clients</p>
-                    <div class="socialparent">
-                        <div class="socialchild child-1">
-                            <a href="mailto:carlosbilbao2@gmail.com" class="socialbutton btn-1" aria-label="Email">
-                                <svg height="1.2em" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="socialchild child-2">
-                            <a href="https://www.linkedin.com/in/carlos-bilbao-lara/" class="socialbutton btn-2" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                                <svg height="1.2em" viewBox="0 0 448 512" fill="currentColor">
-                                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="socialchild child-3">
-                            <a href="https://github.com/Carlosbil" class="socialbutton btn-3" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                                <svg height="1.2em" viewBox="0 0 496 512" fill="currentColor">
-                                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <a href="#introduction" class="scroll-indicator" aria-label="Scroll down">
-                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+        <div class="hero-meta">
+          <a href="https://github.com/Carlosbil" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/carlos-bilbao-lara/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <span>English C1 · Spanish native</span>
         </div>
-    </header>
+      </div>
 
-    <main>
-        <!-- Introduction Section -->
-        <section id="introduction" class="fade-in">
-            <div class="section-header">
-                <h2><span class="section-number">01.</span> Introduction</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="aboutme">
-                <p>
-                    Hello! I'm <strong>Carlos Bilbao</strong>, an <strong>AI & Software Lead</strong> with over <strong>4 years of experience</strong> involved in international projects for top-tier clients such as <strong>HPE, AT&T, Telefónica, and Verisure</strong>.
-                </p>
-                <p>
-                    Currently focused on leading machine learning and AI projects, I have developed innovative solutions and applications that automate processes through AI, achieving <strong>30% time savings</strong> for users. I specialize in <strong>NLP</strong>, <strong>Computer Vision</strong>, and <strong>Multimodal LLMs</strong>.
-                </p>
-                <p>
-                    I'm also pursuing a <strong>PhD in Artificial Intelligence</strong> at Universidad Politécnica de Madrid, researching Hybrid Neuroevolution algorithms. Native Spanish speaker, fluent in English (C1), with all professional work conducted primarily in English.
-                </p>
-                <div class="cta-buttons">
-                    <a href="./cv/E_Bilbao_Lara_Carlos_CV.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7,10 12,15 17,10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        Download CV
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="fade-in">
-            <div class="section-header">
-                <h2><span class="section-number">02.</span> Technical Skills</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="16,18 22,12 16,6"></polyline>
-                            <polyline points="8,6 2,12 8,18"></polyline>
-                        </svg>
-                        Programming Languages
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag highlight">Python</span>
-                        <span class="skill-tag highlight">Java</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">C++</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
-                        </svg>
-                        AI & Machine Learning
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag highlight">PyTorch</span>
-                        <span class="skill-tag highlight">Hugging Face</span>
-                        <span class="skill-tag highlight">Azure AI Foundry</span>
-                        <span class="skill-tag highlight">LLMs</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">LangGraph</span>
-                        <span class="skill-tag">MCP Servers</span>
-                        <span class="skill-tag">AI Agents</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                        Backend & DevOps
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag highlight">Docker</span>
-                        <span class="skill-tag highlight">Kubernetes</span>
-                        <span class="skill-tag highlight">Azure</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">Helm</span>
-                        <span class="skill-tag">SonarQube</span>
-                        <span class="skill-tag">Ansible</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Git</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polygon points="12,2 2,7 12,12 22,7 12,2"></polygon>
-                            <polyline points="2,17 12,22 22,17"></polyline>
-                            <polyline points="2,12 12,17 22,12"></polyline>
-                        </svg>
-                        Data & Tools
-                    </h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">N8N</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">SQL Server</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">Agile/Scrum</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="fade-in">
-            <div class="section-header">
-                <h2><span class="section-number">03.</span> Experience</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>AI & Software Lead</h3>
-                            <span class="company">@ Lognext</span>
-                        </div>
-                        <span class="timeline-date">May 2025 - Present</span>
-                        <ul class="timeline-details">
-                            <li>Driving AI Adoption and Innovation, achieving over 100% of client objectives for new AI Tools in less than six months</li>
-                            <li>Creating MCP Servers using Python, Java and TypeScript, and AI Agents using Azure AI Foundry</li>
-                            <li>Designing and implementing AI POCs with automation flows using N8N and LangGraph</li>
-                            <li>Creating data dashboards using Power BI and supporting data infrastructure with MongoDB and SQL Server</li>
-                            <li>Conducting technical workshops and demos to train stakeholders on AI technologies and internal developed products</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Artificial Intelligence Engineer</h3>
-                            <span class="company">@ Full-On-Net</span>
-                        </div>
-                        <span class="timeline-date">June 2024 - May 2025</span>
-                        <ul class="timeline-details">
-                            <li>Engineered AI solutions utilizing NLP, Vision Computing, and multimodal LLMs</li>
-                            <li>Developed AI pipelines with Hugging Face, PyTorch, Flask, OpenCV, and SQLAlchemy</li>
-                            <li>Led microservices architecture development, improving scalability and maintainability</li>
-                            <li>Designed an innovative generic class, decreasing model modification time by 30%</li>
-                            <li>Deployed software using Ansible, Docker, and Kubernetes on Azure</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software/DevOps Engineer</h3>
-                            <span class="company">@ CDS (HPE Company)</span>
-                        </div>
-                        <span class="timeline-date">January 2023 - June 2024</span>
-                        <ul class="timeline-details">
-                            <li>Developed applications for R&D department with emphasis on CI/CD pipelines</li>
-                            <li>Backend development using Java 11 and Python 3 with PyTorch and Hugging Face</li>
-                            <li>Initiated development of NLP transformers and data analysis pipelines</li>
-                            <li>Engineered complex functions achieving 40% improvement in efficiency</li>
-                            <li>Implemented CI/CD pipelines with Jenkins, SonarQube, and automated deployments</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Developer</h3>
-                            <span class="company">@ Inetum</span>
-                        </div>
-                        <span class="timeline-date">May 2021 - December 2021</span>
-                        <ul class="timeline-details">
-                            <li>Designed and implemented architecture from scratch</li>
-                            <li>Developed web applications using React and Java</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="fade-in">
-            <div class="section-header">
-                <h2><span class="section-number">04.</span> Education</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>PhD in Artificial Intelligence</h3>
-                            <span class="company">@ Universidad Politécnica de Madrid</span>
-                        </div>
-                        <span class="timeline-date">September 2025 - Present</span>
-                        <ul class="timeline-details">
-                            <li>Research focus: Hybrid Neuroevolution algorithms</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Master's in Artificial Intelligence</h3>
-                            <span class="company">@ Universidad Alfonso X</span>
-                        </div>
-                        <span class="timeline-date">September 2023 - September 2024</span>
-                        <ul class="timeline-details">
-                            <li>Final Project: Designed and implemented a hybrid neuroevolution algorithm</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Bachelor's in Computer Science</h3>
-                            <span class="company">@ Universidad Politécnica de Madrid</span>
-                        </div>
-                        <span class="timeline-date">September 2018 - June 2022</span>
-                        <ul class="timeline-details">
-                            <li>Final Project: CNN able to recognize emoticons in any picture</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="fade-in">
-            <div class="section-header">
-                <h2><span class="section-number">05.</span> Featured Projects</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="projects-grid">
-                <!-- Neuroevolution - PhD Research -->
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <img src="./images/NeuroEvolution.png" alt="Neuroevolution System - Distributed Neural Architecture Evolution" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Carlosbil/Neuroevolution" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">🔬 PhD Research</span>
-                        <h3>Neuroevolution System</h3>
-                        <p>Distributed system for evolving neural network architectures using Hybrid NEAT algorithms. Features Kafka-based microservices architecture for scalable and fault-tolerant evolution of CNN models.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Kafka</span>
-                            <span>Docker</span>
-                            <span>PyTorch</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- AutoModelizer - Master's Thesis -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="./images/AutoBDP.png" alt="AutoModelizer - Genetic Algorithm CNN Architecture Search" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Carlosbil/AutoModelizer" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">🎓 Master's Thesis</span>
-                        <h3>AutoModelizer</h3>
-                        <p>Automatic CNN architecture optimizer using genetic algorithms. Features a React-based interface for configuring evolution parameters. Developed as part of my Master's degree final project.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>PyTorch</span>
-                            <span>React</span>
-                            <span>Docker</span>
-                            <span>K8s</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- AI for Geometry Dash -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="./images/Geometry.png" alt="AI for Geometry Dash - Deep Q-Learning" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Carlosbil/AI_FOR_Geometry_dash" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Reinforcement Learning</span>
-                        <h3>AI for Geometry Dash</h3>
-                        <p>Deep Q-Learning and PPO agents that learn to play Geometry Dash in real-time. Uses CNN for screen analysis, custom reward system, and e-greedy policy with CUDA acceleration.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>PyTorch</span>
-                            <span>CUDA</span>
-                            <span>PPO</span>
-                            <span>DQN</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- ALL MY CNNs -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="./images/cnn.png" alt="Vision Computing CNN Collection" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Carlosbil/ALL_MY_CNNs" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Computer Vision</span>
-                        <h3>Vision Computing CNNs</h3>
-                        <p>Collection of CNN architectures for image classification: CIFAR-100 experiments, DogNet detector, MNIST classifier, Flowers-102 classifier, and a 100-class sports classifier.</p>
-                        <div class="project-tech">
-                            <span>TensorFlow</span>
-                            <span>PyTorch</span>
-                            <span>Keras</span>
-                            <span>CNN</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Stock Predictor -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="./images/stock.png" alt="Stock Market Predictor" loading="lazy">
-                        <div class="project-overlay">
-                            <a href="https://github.com/Carlosbil/Invest_basic_predictor" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View code on GitHub">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15,3 21,3 21,9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-category">Data Science</span>
-                        <h3>Stock Predictor</h3>
-                        <p>Machine learning model for predicting stock market values. Trained on historical data from Microsoft, Apple, and Amazon to forecast future price movements.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>Scikit-learn</span>
-                            <span>Jupyter</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="more-projects">
-                <a href="https://github.com/Carlosbil" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    View More on GitHub
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12,5 19,12 12,19"></polyline>
-                    </svg>
-                </a>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="fade-in">
-            <div class="section-header">
-                <h2><span class="section-number">06.</span> Get In Touch</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-content">
-                <p class="contact-intro">
-                    I'm currently open to new opportunities and collaborations. Whether you have a question, a project idea, or just want to say hi, feel free to reach out!
-                </p>
-                <div class="contact-links">
-                    <a href="mailto:carlosbilbao2@gmail.com" class="contact-item">
-                        <div class="contact-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                        </div>
-                        <div class="contact-info">
-                            <span class="contact-label">Email</span>
-                            <span class="contact-value">carlosbilbao2@gmail.com</span>
-                        </div>
-                    </a>
-                    
-                    <a href="https://www.linkedin.com/in/carlos-bilbao-lara/" class="contact-item" target="_blank" rel="noopener noreferrer">
-                        <div class="contact-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                <rect x="2" y="9" width="4" height="12"></rect>
-                                <circle cx="4" cy="4" r="2"></circle>
-                            </svg>
-                        </div>
-                        <div class="contact-info">
-                            <span class="contact-label">LinkedIn</span>
-                            <span class="contact-value">carlos-bilbao-lara</span>
-                        </div>
-                    </a>
-                    
-                    <a href="https://github.com/Carlosbil" class="contact-item" target="_blank" rel="noopener noreferrer">
-                        <div class="contact-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                            </svg>
-                        </div>
-                        <div class="contact-info">
-                            <span class="contact-label">GitHub</span>
-                            <span class="contact-value">Carlosbil</span>
-                        </div>
-                    </a>
-                </div>
-                <a href="mailto:carlosbilbao2@gmail.com" class="btn btn-primary btn-large">
-                    Say Hello
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="22" y1="2" x2="11" y2="13"></line>
-                        <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
-                    </svg>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>Designed & Built by <strong>Carlos Bilbao Lara</strong></p>
-            <p class="footer-year">© 2025 - Madrid, Spain</p>
+      <div class="system-card reveal" aria-label="Production AI system architecture">
+        <div class="terminal-bar"><span></span><span></span><span></span><code>production-ai.system</code></div>
+        <div class="system-head">
+          <div><small>SYSTEM STATUS</small><strong><i></i> Operational</strong></div>
+          <span class="system-badge">v2026.09</span>
         </div>
-    </footer>
+        <div class="architecture">
+          <div class="arch-node input"><small>01 / INTENT</small><strong>Business problem</strong><span>users · outcomes · constraints</span></div>
+          <div class="connector"><i></i></div>
+          <div class="arch-node core"><small>02 / ORCHESTRATE</small><strong>Agent runtime</strong><span>plan · route · evaluate · recover</span></div>
+          <div class="connector"><i></i></div>
+          <div class="arch-node context"><small>03 / CONNECT</small><strong>Context + tools</strong><span>MCP · RAG · APIs · memory</span></div>
+        </div>
+        <div class="system-output">
+          <span>ENTERPRISE SYSTEMS</span><span>CLOUD & DATA</span><span>OBSERVABILITY</span><strong>VALUE ✓</strong>
+        </div>
+        <div class="terminal-line"><span>›</span> shipping reliable intelligence<span class="cursor">_</span></div>
+      </div>
+    </section>
 
-    <!-- Back to top button -->
-    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="18,15 12,9 6,15"></polyline>
-        </svg>
-    </button>
+    <section class="proof shell reveal" aria-label="Career highlights">
+      <div><strong data-count="600">+600%</strong><span>AI usage growth led in one year</span></div>
+      <div><strong data-count="30">30%</strong><span>faster model iteration</span></div>
+      <div><strong data-count="40">40%</strong><span>engineering efficiency gain</span></div>
+      <div><strong>4+ yrs</strong><span>shipping international projects</span></div>
+    </section>
+
+    <section id="impact" class="section shell">
+      <div class="section-intro reveal">
+        <p class="kicker">01 / WHAT I DO</p>
+        <h2>From AI ambition to operating capability.</h2>
+        <p>I work where AI architecture, software engineering and adoption meet - turning emerging technology into systems teams can trust and use.</p>
+      </div>
+      <div class="pillar-grid">
+        <article class="pillar reveal"><span>01</span><div class="glyph">◎</div><h3>Agentic AI</h3><p>Multi-agent workflows, tool calling, memory, evaluation and orchestration with LangGraph and modern LLM stacks.</p><ul><li>Agents & orchestration</li><li>RAG & context engineering</li><li>Evaluation & guardrails</li></ul></article>
+        <article class="pillar reveal"><span>02</span><div class="glyph">⌘</div><h3>MCP ecosystems</h3><p>Secure MCP servers that connect assistants to enterprise APIs, knowledge sources and operational tooling.</p><ul><li>Python · Java · TypeScript</li><li>Enterprise integrations</li><li>Governance by design</li></ul></article>
+        <article class="pillar reveal"><span>03</span><div class="glyph">◇</div><h3>AI platforms</h3><p>Cloud-native backend, data and delivery foundations that move proofs of concept into production.</p><ul><li>Azure · Kubernetes · Helm</li><li>Microservices & data</li><li>CI/CD & observability</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section section-contrast" id="experience">
+      <div class="shell">
+        <div class="section-intro split reveal"><div><p class="kicker">02 / EXPERIENCE</p><h2>Engineering leadership, grounded in delivery.</h2></div><p>Four roles across AI, backend and DevOps - with increasing ownership from implementation to architecture, client strategy and adoption.</p></div>
+        <div class="experience-list">
+          <article class="experience active reveal"><div class="experience-period">2025 - now</div><div class="experience-main"><div class="experience-title"><h3>AI & Software Lead</h3><a href="https://lognext.com/" target="_blank" rel="noopener">Lognext ↗</a></div><p>Leading enterprise AI adoption, agentic architecture and the governance of AI-enabled software delivery.</p><div class="outcomes"><span>+600% AI usage in one year</span><span>MCP servers & multi-agent systems</span><span>Executive metrics & strategy</span></div></div></article>
+          <article class="experience reveal"><div class="experience-period">2024 - 2025</div><div class="experience-main"><div class="experience-title"><h3>Artificial Intelligence Engineer</h3><span>Full-On-Net</span></div><p>Engineered NLP, computer vision and multimodal LLM solutions; led scalable microservice architecture on Azure.</p><div class="outcomes"><span>30% faster model changes</span><span>PyTorch · Hugging Face</span><span>Docker · Kubernetes · Azure</span></div></div></article>
+          <article class="experience reveal"><div class="experience-period">2023 - 2024</div><div class="experience-main"><div class="experience-title"><h3>Software / DevOps Engineer</h3><span>CDS, an HPE company</span></div><p>Built R&D applications, modernized Java and Python systems, and delivered robust CI/CD pipelines.</p><div class="outcomes"><span>40% efficiency improvement</span><span>Java · Python · NLP</span><span>Jenkins · SonarQube · CI/CD</span></div></div></article>
+          <article class="experience reveal"><div class="experience-period">2021</div><div class="experience-main"><div class="experience-title"><h3>Software Developer</h3><span>Inetum</span></div><p>Designed application architecture from scratch and delivered full-stack web products with Java and React.</p><div class="outcomes"><span>Architecture ownership</span><span>Java · React</span></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="work">
+      <div class="section-intro split reveal"><div><p class="kicker">03 / SELECTED WORK</p><h2>Systems, research and experiments.</h2></div><p>A selection of public work that reflects how I approach distributed AI, applied research and developer education.</p></div>
+      <div class="work-grid">
+        <a class="project project-featured reveal" href="https://github.com/Carlosbil/Neuroevolution-ipynbs" target="_blank" rel="noopener">
+          <div class="project-top"><span>RESEARCH SYSTEM · 2026</span><b>↗</b></div><div class="project-visual evolution" aria-hidden="true"><div class="dna"></div><div class="graph-lines"></div><span>fitness ↑</span></div><div class="project-copy"><p class="project-number">01</p><h3>Hybrid Neuroevolution</h3><p>Evolvable Conv1D architectures for Parkinson's voice classification with parallel 5-fold validation and multi-objective Pareto selection.</p><div class="tags"><span>Python</span><span>PyTorch</span><span>NEAT</span><span>Pareto</span></div></div>
+        </a>
+        <a class="project reveal" href="https://github.com/Carlosbil/Neuroevolution" target="_blank" rel="noopener"><div class="project-top"><span>DISTRIBUTED AI</span><b>↗</b></div><div class="project-copy"><p class="project-number">02</p><h3>Distributed Neuroevolution</h3><p>Event-driven services that evolve, train and evaluate neural architectures through Kafka-connected workers.</p><div class="tags"><span>Kafka</span><span>Docker</span><span>Python</span><span>Microservices</span></div></div></a>
+        <a class="project reveal" href="https://github.com/Carlosbil/agent-files-game" target="_blank" rel="noopener"><div class="project-top"><span>AI EDUCATION · WIP</span><b>↗</b></div><div class="project-copy"><p class="project-number">03</p><h3>Agent Files Game</h3><p>A gamified learning experience for agents, skills, hooks, memory, context and token economics.</p><div class="tags"><span>Agents</span><span>Product</span><span>Flutter</span></div></div></a>
+      </div>
+      <a class="text-link reveal" href="https://github.com/Carlosbil?tab=repositories" target="_blank" rel="noopener">View all public repositories <span>↗</span></a>
+    </section>
+
+    <section class="section research" id="research">
+      <div class="research-orbit" aria-hidden="true"><i></i><i></i><i></i></div>
+      <div class="shell research-grid">
+        <div class="section-intro reveal"><p class="kicker">04 / RESEARCH MODE</p><h2>Can neural architectures evolve efficiently across distributed infrastructure?</h2><p>My PhD research at Universidad Politécnica de Madrid explores hybrid neuroevolution, adaptive architectures and distributed computation.</p><div class="research-tags"><span>Neuroevolution</span><span>NEAT</span><span>Neural Architecture Search</span><span>Distributed AI</span></div></div>
+        <div class="research-card reveal"><small>EDUCATION</small><div><span>2025 - present</span><h3>PhD, Artificial Intelligence</h3><p>Universidad Politécnica de Madrid</p></div><div><span>2023 - 2024</span><h3>MSc, Artificial Intelligence</h3><p>Universidad Alfonso X</p></div><div><span>2018 - 2022</span><h3>BSc, Computer Science</h3><p>Universidad Politécnica de Madrid</p></div></div>
+      </div>
+    </section>
+
+    <section class="contact shell reveal" id="contact">
+      <p class="kicker">05 / LET'S BUILD</p>
+      <h2>Have a hard AI problem?</h2>
+      <p>I'm always interested in conversations about production AI, agentic architecture, MCP ecosystems and distributed intelligence.</p>
+      <a href="mailto:carlosbilbao2@gmail.com">carlosbilbao2@gmail.com <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="shell"><p>© <span id="year"></span> Carlos Bilbao Lara</p><p>Built with intent. Shipped from Madrid.</p><div><a href="https://github.com/Carlosbil" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/carlos-bilbao-lara/" target="_blank" rel="noopener">LinkedIn</a></div></footer>
 </body>
-
 </html>
+
